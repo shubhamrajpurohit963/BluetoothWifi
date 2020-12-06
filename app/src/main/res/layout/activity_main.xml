@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Wifi / Bluetooth Managing App!"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WIFI"
+        android:id="@+id/wifi_name"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:fontFamily="monospace"
+        android:padding="10dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wifi_radiogroup"
+        >
+
+        <RadioButton
+            android:id="@+id/wifi_enable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Wifi"
+            android:buttonTint="@color/colorGreen"
+            android:onClick="onWifiRadioButtonClicked"
+            />
+
+        <RadioButton
+            android:id="@+id/wifi_disable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disable Wifi"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:onClick="onWifiRadioButtonClicked"
+            />
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BLUETOOTH"
+        android:id="@+id/bluetooth_name"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:fontFamily="monospace"
+        android:padding="10dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bluetooth_radiogroup"
+        >
+
+        <RadioButton
+            android:id="@+id/bluetooth_enable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Bluetooth"
+            android:buttonTint="@color/colorGreen"
+            android:onClick="onBluetoothRadioButtonClicked"
+            />
+
+        <RadioButton
+            android:id="@+id/bluetooth_disable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disable Bluetooth"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:onClick="onBluetoothRadioButtonClicked"
+
+            />
+    </RadioGroup>
+
+
+</LinearLayout>
